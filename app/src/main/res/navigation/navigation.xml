@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/levelScreen">
+
+    <fragment
+        android:id="@+id/levelScreen"
+        tools:layout="@layout/screen_level"
+        android:name="uz.gita.animation.ui.LevelScreen"
+        android:label="LevelScreen" >
+        <action
+            android:id="@+id/action_levelScreen_to_gameScreen"
+            app:destination="@id/gameScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameScreen"
+        tools:layout="@layout/screen_game"
+        android:name="uz.gita.animation.ui.GameScreen"
+        android:label="GameScreen" >
+        <argument
+            android:name="level"
+            app:argType="uz.gita.animation.data.LevelEnum" />
+        <action
+            android:id="@+id/action_gameScreen_to_levelScreen"
+            app:destination="@id/levelScreen" />
+    </fragment>
+</navigation>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cho">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/info"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/btnInfo"/>
+
+
+    <TextView
+        android:id="@+id/easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="easy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="medium"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/easy" />
+
+    <TextView
+        android:id="@+id/hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="hard"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="____"
+        app:layout_constraintTop_toBottomOf="@id/easy"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/easy"
+        app:layout_constraintStart_toStartOf="@id/easy"
+        app:layout_constraintEnd_toEndOf="@id/easy"
+        android:textColor="@color/black"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="____"
+        app:layout_constraintTop_toBottomOf="@id/medium"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/medium"
+        app:layout_constraintStart_toStartOf="@id/medium"
+        app:layout_constraintEnd_toEndOf="@id/medium"
+        android:textColor="@color/black"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="____"
+        app:layout_constraintTop_toBottomOf="@id/hard"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/hard"
+        app:layout_constraintStart_toStartOf="@id/hard"
+        app:layout_constraintEnd_toEndOf="@id/hard"
+        android:textColor="@color/black"
+        android:textSize="28sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
